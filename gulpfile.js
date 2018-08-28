@@ -37,7 +37,7 @@ gulp.task('browser-sync', () => {
 });
 
 gulp.task('default', ['browser-sync','styles', 'scripts'], () => {
-	gulp.watch('dev/**/*.js',['js']);
+	gulp.watch('dev/**/*.js',['scripts']);
 	gulp.watch('dev/**/*.scss',['styles']);
 	gulp.watch('./public/styles/style.css',reload);
 	gulp.watch('./public/*.html',reload);
